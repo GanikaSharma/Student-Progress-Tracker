@@ -1,0 +1,10 @@
+# Requirements for the project
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+statsmodels
+pmdarima
+torch
+nltk
