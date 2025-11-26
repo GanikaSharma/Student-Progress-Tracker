@@ -1,101 +1,101 @@
 student_id,attendance,assignments_completed,midterm_score,final_score,feedback
-1,74,10,58,60,Very consistent performance
-2,70,6,57,47,Needs more practice in math
-3,100,7,85,93,Excellent engagement
-4,84,10,61,64,Needs more practice in math
-5,73,5,74,82,Strong in theory but weak in application
-6,83,10,71,73,Struggles with assignments
-7,93,9,83,89,Excellent engagement
-8,98,8,61,52,Needs more practice in math
-9,71,10,76,68,Very consistent performance
-10,87,5,56,53,Good understanding but slow in problem solving
-11,99,8,66,64,Struggles with assignments
-12,77,8,85,88,Struggles with assignments
-13,99,7,77,70,Excellent engagement
-14,90,9,73,68,Needs more practice in math
-15,97,6,53,59,Strong in theory but weak in application
-16,73,10,76,83,Very consistent performance
-17,91,7,88,86,Needs more practice in math
-18,78,6,74,64,Struggles with assignments
-19,90,8,92,92,Strong in theory but weak in application
-20,96,9,78,75,Good understanding but slow in problem solving
-21,75,6,70,77,Strong in theory but weak in application
-22,70,10,81,79,Struggles with assignments
-23,94,10,55,48,Excellent engagement
-24,95,8,63,53,Very consistent performance
-25,95,5,84,92,Very consistent performance
-26,84,6,73,72,Needs more practice in math
-27,74,10,81,75,Very consistent performance
-28,74,8,94,99,Excellent engagement
-29,96,9,57,56,Needs more practice in math
-30,72,9,75,67,Struggles with assignments
-31,71,10,52,58,Struggles with assignments
-32,89,7,87,89,Very consistent performance
-33,72,5,61,51,Strong in theory but weak in application
-34,82,10,91,94,Excellent engagement
-35,82,10,80,76,Good understanding but slow in problem solving
-36,92,8,95,104,Strong in theory but weak in application
-37,78,5,54,47,Very consistent performance
-38,95,5,89,89,Needs more practice in math
-39,82,8,68,72,Good understanding but slow in problem solving
-40,94,7,59,64,Struggles with assignments
-41,74,10,80,79,Excellent engagement
-42,100,10,56,65,Strong in theory but weak in application
-43,96,10,84,79,Very consistent performance
-44,97,6,63,73,Very consistent performance
-45,84,10,95,91,Excellent engagement
-46,80,7,58,65,Excellent engagement
-47,75,5,79,87,Strong in theory but weak in application
-48,88,7,82,79,Needs more practice in math
-49,82,5,87,85,Excellent engagement
-50,100,9,82,91,Very consistent performance
-51,94,5,69,74,Needs more practice in math
-52,74,6,88,92,Very consistent performance
-53,83,5,66,73,Good understanding but slow in problem solving
-54,92,7,90,82,Good understanding but slow in problem solving
-55,75,8,79,89,Needs more practice in math
-56,77,9,93,92,Very consistent performance
-57,93,5,81,89,Excellent engagement
-58,94,7,58,68,Struggles with assignments
-59,86,6,52,58,Struggles with assignments
-60,77,5,62,53,Needs more practice in math
-61,77,6,74,64,Needs more practice in math
-62,75,9,93,86,Very consistent performance
-63,84,8,67,57,Strong in theory but weak in application
-64,96,5,82,89,Struggles with assignments
-65,91,7,59,57,Struggles with assignments
-66,98,6,60,62,Excellent engagement
-67,97,8,86,77,Struggles with assignments
-68,91,6,87,95,Needs more practice in math
-69,71,7,79,73,Excellent engagement
-70,75,6,87,87,Needs more practice in math
-71,74,6,67,75,Good understanding but slow in problem solving
-72,99,9,71,66,Strong in theory but weak in application
-73,96,5,92,83,Struggles with assignments
-74,73,10,66,67,Strong in theory but weak in application
-75,86,10,51,56,Needs more practice in math
-76,87,6,89,91,Very consistent performance
-77,75,9,85,89,Struggles with assignments
-78,81,5,78,76,Good understanding but slow in problem solving
-79,80,6,53,48,Needs more practice in math
-80,81,6,73,65,Very consistent performance
-81,79,10,66,59,Excellent engagement
-82,90,9,58,56,Very consistent performance
-83,70,6,66,57,Good understanding but slow in problem solving
-84,87,9,82,82,Very consistent performance
-85,89,5,55,48,Strong in theory but weak in application
-86,75,8,84,74,Good understanding but slow in problem solving
-87,99,5,84,92,Strong in theory but weak in application
-88,71,9,63,55,Strong in theory but weak in application
-89,86,8,51,49,Struggles with assignments
-90,78,6,62,72,Excellent engagement
-91,80,6,87,80,Needs more practice in math
-92,84,9,75,71,Strong in theory but weak in application
-93,71,10,50,43,Very consistent performance
-94,81,7,56,64,Good understanding but slow in problem solving
-95,90,9,84,81,Very consistent performance
-96,87,6,92,91,Excellent engagement
-97,93,7,59,50,Needs more practice in math
-98,97,6,93,96,Struggles with assignments
-99,72,7,87,97,Strong in theory but weak in application
-100,99,6,72,65,Struggles with assignments
+1,88,6,77,80,Good understanding but slow in problem solving
+2,71,10,57,58,Struggles with assignments
+3,78,8,54,63,Struggles with assignments
+4,79,10,89,82,Struggles with assignments
+5,72,9,61,64,Struggles with assignments
+6,86,9,84,86,Strong in theory but weak in application
+7,96,7,62,69,Good understanding but slow in problem solving
+8,82,7,90,100,Good understanding but slow in problem solving
+9,82,9,64,72,Strong in theory but weak in application
+10,100,9,77,68,Struggles with assignments
+11,72,5,69,69,Needs more practice in math
+12,83,5,72,78,Needs more practice in math
+13,88,5,93,103,Excellent engagement
+14,81,7,64,63,Excellent engagement
+15,74,9,68,60,Excellent engagement
+16,77,7,70,80,Excellent engagement
+17,94,10,83,87,Excellent engagement
+18,92,6,71,79,Very consistent performance
+19,98,7,60,57,Very consistent performance
+20,80,6,71,63,Good understanding but slow in problem solving
+21,90,8,56,56,Struggles with assignments
+22,80,9,53,48,Strong in theory but weak in application
+23,76,9,78,73,Excellent engagement
+24,82,8,85,76,Struggles with assignments
+25,74,7,77,74,Excellent engagement
+26,90,7,76,85,Struggles with assignments
+27,89,10,64,58,Strong in theory but weak in application
+28,82,7,52,55,Excellent engagement
+29,81,7,67,59,Excellent engagement
+30,97,8,53,59,Strong in theory but weak in application
+31,100,8,70,68,Struggles with assignments
+32,87,8,70,74,Very consistent performance
+33,96,9,83,89,Good understanding but slow in problem solving
+34,94,7,88,82,Needs more practice in math
+35,77,7,90,89,Needs more practice in math
+36,84,7,89,88,Struggles with assignments
+37,76,5,87,94,Excellent engagement
+38,83,9,61,53,Struggles with assignments
+39,98,5,87,92,Good understanding but slow in problem solving
+40,70,5,53,51,Struggles with assignments
+41,81,5,91,91,Good understanding but slow in problem solving
+42,73,7,65,67,Strong in theory but weak in application
+43,99,8,54,60,Struggles with assignments
+44,90,7,69,78,Struggles with assignments
+45,82,10,78,82,Good understanding but slow in problem solving
+46,81,10,70,67,Struggles with assignments
+47,89,7,66,76,Excellent engagement
+48,77,6,52,52,Excellent engagement
+49,88,8,55,59,Excellent engagement
+50,75,5,64,55,Struggles with assignments
+51,84,6,81,88,Excellent engagement
+52,98,5,77,71,Struggles with assignments
+53,71,7,55,53,Struggles with assignments
+54,79,6,62,62,Strong in theory but weak in application
+55,93,8,78,76,Needs more practice in math
+56,86,10,68,75,Excellent engagement
+57,73,9,55,65,Needs more practice in math
+58,96,8,61,51,Needs more practice in math
+59,96,5,92,102,Very consistent performance
+60,85,5,61,54,Strong in theory but weak in application
+61,88,10,68,70,Strong in theory but weak in application
+62,88,6,91,94,Very consistent performance
+63,93,6,62,68,Good understanding but slow in problem solving
+64,94,10,91,101,Good understanding but slow in problem solving
+65,100,6,75,72,Very consistent performance
+66,75,10,83,91,Struggles with assignments
+67,71,5,85,78,Good understanding but slow in problem solving
+68,74,10,63,54,Strong in theory but weak in application
+69,72,10,85,93,Strong in theory but weak in application
+70,77,8,70,67,Excellent engagement
+71,94,9,73,66,Struggles with assignments
+72,88,8,61,70,Excellent engagement
+73,80,5,66,66,Strong in theory but weak in application
+74,86,10,75,65,Excellent engagement
+75,79,7,64,70,Needs more practice in math
+76,98,8,74,71,Strong in theory but weak in application
+77,87,6,58,56,Needs more practice in math
+78,74,9,68,75,Excellent engagement
+79,84,5,81,75,Excellent engagement
+80,75,6,67,70,Excellent engagement
+81,76,7,77,70,Good understanding but slow in problem solving
+82,79,8,56,63,Very consistent performance
+83,98,7,91,99,Good understanding but slow in problem solving
+84,70,7,81,85,Strong in theory but weak in application
+85,78,6,95,95,Struggles with assignments
+86,73,8,54,56,Excellent engagement
+87,96,8,79,84,Excellent engagement
+88,96,9,76,83,Strong in theory but weak in application
+89,73,7,64,59,Struggles with assignments
+90,99,9,55,46,Excellent engagement
+91,85,8,57,47,Strong in theory but weak in application
+92,90,6,87,81,Needs more practice in math
+93,72,10,54,51,Struggles with assignments
+94,78,9,76,82,Needs more practice in math
+95,79,8,66,66,Struggles with assignments
+96,81,7,62,54,Good understanding but slow in problem solving
+97,100,6,78,84,Very consistent performance
+98,82,10,60,65,Very consistent performance
+99,96,7,60,57,Very consistent performance
+100,87,5,66,59,Needs more practice in math

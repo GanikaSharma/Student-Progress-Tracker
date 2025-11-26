@@ -1,31 +1,27 @@
 import pandas as pd
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-class Preprocessor:
-    def __init__(self):
-        self.scaler = StandardScaler()
-        self.vectorizer = TfidfVectorizer(max_features=50)
+def clean_data(df: pd.DataFrame):
+    df = df.copy()
+    df = df.dropna()
+    return df
 
-    def fit_transform(self, df):
-        X_num = df[["attendance", "assignments_completed", "midterm_score"]]
-        X_num_scaled = self.scaler.fit_transform(X_num)
+def encode_features(df: pd.DataFrame):
+    df = df.copy()
+    label_encoders = {}
 
-        X_text = self.vectorizer.fit_transform(df["feedback"]).toarray()
+    for col in df.select_dtypes(include=["object"]).columns:
+        le = LabelEncoder()
+        df[col] = le.fit_transform(df[col])
+        label_encoders[col] = le
 
-        X = np.hstack([X_num_scaled, X_text])
-        y = df["final_score"]
+    return df, label_encoders
 
-        return X, y
+def scale_features(df: pd.DataFrame):
+    df = df.copy()
+    scaler = StandardScaler()
 
-    def transform(self, df):
-        X_num = df[["attendance", "assignments_completed", "midterm_score"]]
-        X_num_scaled = self.scaler.transform(X_num)
+    numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns
+    df[numeric_cols] = scaler.fit_transform(df[numeric_cols])
 
-        X_text = self.vectorizer.transform(df["feedback"]).toarray()
-
-        X = np.hstack([X_num_scaled, X_text])
-        y = df["final_score"]
-
-        return X, y
+    return df, scaler
