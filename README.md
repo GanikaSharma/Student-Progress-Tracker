@@ -53,6 +53,18 @@ cd Student_Performance_Tracker
 pip install -r requirements.txt
 jupyter notebook
 
+🔮 How to Run a Prediction (CLI)
+You can use the trained model to predict a student’s performance category directly from the command line.
+➡️ Step 1: Navigate to the project folder
+cd Student-Progress-Tracker
+➡️ Step 2: Run the prediction script
+Use:
+python scripts/predict.py <student_id> <attendance> <assignments_completed> <midterm_score> "<feedback>"
+Example:
+python scripts/predict.py 101 75 8 81 "Very consistent performance"
+✔ Expected Output
+✅ Predicted Final Score: High
+
 🧩 Future Improvements
 • Add live dashboard using Streamlit / Dash
 • Integrate database (MySQL / Firebase)

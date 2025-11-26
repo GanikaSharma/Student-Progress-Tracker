@@ -1,41 +1,69 @@
 import joblib
 import pandas as pd
 import sys
+import os
 
-# 1️⃣ Load the model once
-try:
-    model = joblib.load("models/random_forest.pkl")
-except FileNotFoundError:
-    print("Model file not found. Make sure 'models/random_forest.pkl' exists.")
+# -----------------------------
+# 1️⃣ Load Model + Encoders
+# -----------------------------
+MODEL_PATH = "models/random_forest.pkl"
+ENCODER_PATH = "models/label_encoders.pkl"
+
+if not os.path.exists(MODEL_PATH):
+    print("❌ Model file missing! Expected at: models/random_forest.pkl")
     sys.exit(1)
 
-# 2️⃣ Define prediction function
-def predict(input_data):
-    # Ensure input matches the feature columns expected by the model
-    df = pd.DataFrame([input_data])
-    # Optional: reorder columns if needed (use model.feature_names_in_ if available)
-    if hasattr(model, "feature_names_in_"):
-        df = df[model.feature_names_in_]
-    pred = model.predict(df)[0]
-    return pred
+model = joblib.load(MODEL_PATH)
 
-# 3️⃣ Main function to accept command line arguments
+# Load encoders only if they exist
+label_encoders = joblib.load(ENCODER_PATH) if os.path.exists(ENCODER_PATH) else None
+
+
+# -----------------------------
+# 2️⃣ Prediction Function
+# -----------------------------
+def predict(input_data):
+    df = pd.DataFrame([input_data])
+
+    # Apply label encoder to feedback if available
+    if label_encoders and "feedback" in label_encoders:
+        df["feedback"] = label_encoders["feedback"].transform(df["feedback"])
+
+    # Ensure columns match model
+    if hasattr(model, "feature_names_in_"):
+        missing_cols = set(model.feature_names_in_) - set(df.columns)
+        if missing_cols:
+            raise ValueError(f"Missing required columns for prediction: {missing_cols}")
+
+        df = df[model.feature_names_in_]
+
+    # Run prediction
+    prediction = model.predict(df)[0]
+    return prediction
+
+
+# -----------------------------
+# 3️⃣ Command Line Interface
+# -----------------------------
 if __name__ == "__main__":
-    # python predict.py 75 80 90 10
+    # Usage:
+    # python scripts/predict.py attendance assignments_completed midterm_score feedback
+
     if len(sys.argv) != 5:
-        print("Usage: python predict.py attendance test1 test2 assignments_submitted")
+        print("Usage: python scripts/predict.py <attendance> <assignments_completed> <midterm_score> <feedback>")
         sys.exit(1)
 
     try:
         data = {
+            "student_id": 9999,  # dummy ID, not used for prediction but required by model
             "attendance": float(sys.argv[1]),
-            "test1": float(sys.argv[2]),
-            "test2": float(sys.argv[3]),
-            "assignments_submitted": int(sys.argv[4])
+            "assignments_completed": int(sys.argv[2]),
+            "midterm_score": float(sys.argv[3]),
+            "feedback": sys.argv[4]
         }
     except ValueError:
-        print("All input values must be numeric.")
+        print("❌ Error: Numeric fields must contain valid numbers.")
         sys.exit(1)
 
     result = predict(data)
-    print(f"Predicted Performance Category: {result}")
+    print(f"\n✅ Predicted Final Score: {result}\n")
